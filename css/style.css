@@ -64,3 +64,46 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.container {
+  width: 390px;
+  margin: 0 auto;
+}
+
+.column-left h1 {
+  color: var(--color-white-1);
+  font-size: 3rem;
+}
+
+.column-left h1 span {
+  color: var(--color-violet);
+}
+
+.column-left p {
+  margin-top: 3rem;
+  color: var(--color-white-2);
+  font-size: 1.5rem;
+}
+
+.column-left .stats {
+  color: var(--color-white-1);
+  font-size: 1.5rem;
+
+  justify-self: flex-end;
+}
+
+.column-left .stats ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-right img {
+  background: var(--color-violet);
+}
