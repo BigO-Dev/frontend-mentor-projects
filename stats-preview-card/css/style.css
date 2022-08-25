@@ -51,7 +51,6 @@ img {
 
 /* CARD COMPONENT */
 .card {
-  background: var(--color-blue-2);
   border-radius: 10px;
   height: 444px;
   width: 1111px;
@@ -61,15 +60,6 @@ img {
   left: 50%;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
 }
 
 .container {
@@ -77,33 +67,29 @@ img {
   margin: 0 auto;
 }
 
-.column-left h1 {
-  color: var(--color-white-1);
-  font-size: 3rem;
+.left {
+  flex: 50%;
+  background: var(--color-blue-2);
+}
+
+.right {
+  flex: 50%;
+  background: url(/images/image-header-desktop.jpg) no-repeat center
+    center/cover;
+  position: relative;
+}
+
+.right::before {
+  content: "";
+  background: var(--color-violet);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .column-left h1 span {
   color: var(--color-violet);
-}
-
-.column-left p {
-  margin-top: 3rem;
-  color: var(--color-white-2);
-  font-size: 1.5rem;
-}
-
-.column-left .stats {
-  color: var(--color-white-1);
-  font-size: 1.5rem;
-
-  justify-self: flex-end;
-}
-
-.column-left .stats ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.column-right img {
-  background: var(--color-violet);
 }
