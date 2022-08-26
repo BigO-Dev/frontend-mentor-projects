@@ -142,3 +142,73 @@ img {
   background: var(--color-violet);
   mix-blend-mode: multiply;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1280px) {
+  html,
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    height: 1200px;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+    position: relative;
+  }
+
+  .card {
+    background: var(--color-blue-2);
+    border-radius: 10px;
+    width: 375px;
+    height: 1000px;
+    margin: -600px 0 0 -187.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    line-height: 24px;
+  }
+
+  .left {
+    height: 535px;
+    padding: 2.8rem;
+  }
+
+  .left h1 {
+    font-size: 2.72rem;
+    line-height: 32px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .left p {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .left .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .stat-number {
+    display: block;
+  }
+
+  .stat-desc {
+    text-align: center;
+  }
+
+  .right {
+    max-width: 100%;
+    height: 270.9px;
+    vertical-align: middle;
+  }
+}
