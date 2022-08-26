@@ -134,6 +134,5 @@ img {
   top: 0;
   left: 0;
   background: var(--color-violet);
-
-  opacity: 0.5;
+  mix-blend-mode: multiply;
 }
