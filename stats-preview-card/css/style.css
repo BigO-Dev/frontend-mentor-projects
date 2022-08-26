@@ -26,7 +26,7 @@ html,
 body {
   font-family: var(--font-family-inter);
   font-size: var(--font-size);
-  line-height: 1.5;
+  line-height: 1.2;
   background: var(--color-blue-1);
   height: 100vh;
   width: 100%;
@@ -51,6 +51,7 @@ img {
 
 /* CARD COMPONENT */
 .card {
+  background: var(--color-blue-2);
   border-radius: 10px;
   height: 444px;
   width: 1111px;
@@ -60,36 +61,79 @@ img {
   left: 50%;
   overflow: hidden;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 110px;
 }
 
 .container {
-  width: 390px;
-  margin: 0 auto;
+  height: 100%;
+  width: 372px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 70px;
 }
 
 .left {
   flex: 50%;
-  background: var(--color-blue-2);
+}
+
+.left h3 {
+  color: var(--color-white-1);
+  line-height: 1.25;
+  font-size: 3rem;
+}
+
+.left h3 span {
+  color: var(--color-violet);
+}
+
+.left p {
+  margin-top: 20px;
+  color: var(--color-white-2);
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white-1);
+}
+
+.stat-desc {
+  color: var(--color-white-3);
+  font-family: var(--font-family-lexend);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2;
 }
 
 .right {
   flex: 50%;
+  height: 100%;
+  width: 100%;
   background: url(/images/image-header-desktop.jpg) no-repeat center
     center/cover;
+  overflow: hidden;
   position: relative;
 }
 
-.right::before {
+.right::after {
   content: "";
-  background: var(--color-violet);
-  opacity: 0.6;
   position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-}
+  top: 0;
+  left: 0;
+  background: var(--color-violet);
 
-.column-left h1 span {
-  color: var(--color-violet);
+  opacity: 0.5;
 }
